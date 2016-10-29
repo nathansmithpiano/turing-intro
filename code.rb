@@ -1,24 +1,19 @@
-msg1 = "Hello World"
-msg2 = "It is Saturday"
-msg3 = "How does Ruby even work?"
+system("clear")
 
-prompt1 = "Which msg do you want? "
+# prompts
+puts "Welcome to the program."
+print "First Name: "
+firstName = gets.chomp
+print "Last Name: "
+lastName = gets.chomp
+print "City: "
+cityName = gets.chomp
+print "State: "
+stateName = gets.chomp
 
-puts "1. " + msg1
-puts "2. " + msg2
-puts "3. " + msg3
-
-print prompt1
-input1 = gets.chomp()
-
-if input1 == 1.to_s
-    puts "Your message: " + msg1
-elsif input1 == 2.to_s
-    puts "Your message: " + msg2
-elsif input1 == 3.to_s
-    puts "Your message: " + msg3
-else
-    puts "\nInvalid message. "
-    print prompt1
-    input1 = gets.chomp()
-end
+#displays
+puts ""
+puts "Your inputs:"
+puts "#{firstName} #{lastName }"
+puts "-" * (firstName.length + lastName.length + 1)
+puts "#{cityName}, #{stateName}"
